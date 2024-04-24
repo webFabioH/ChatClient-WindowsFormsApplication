@@ -90,6 +90,7 @@
             this.btnConectar.TabIndex = 3;
             this.btnConectar.Text = "Conectar";
             this.btnConectar.UseVisualStyleBackColor = true;
+            this.btnConectar.Click += new System.EventHandler(this.btnConectar_Click);
             // 
             // txtLog
             // 
@@ -107,6 +108,7 @@
             this.txtMensagem.Name = "txtMensagem";
             this.txtMensagem.Size = new System.Drawing.Size(446, 38);
             this.txtMensagem.TabIndex = 5;
+            this.txtMensagem.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMensagem_KeyPress);
             // 
             // btnEnviar
             // 
@@ -118,6 +120,7 @@
             this.btnEnviar.TabIndex = 6;
             this.btnEnviar.Text = "Enviar";
             this.btnEnviar.UseVisualStyleBackColor = true;
+            this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
             // 
             // labelStatus
             // 
@@ -144,7 +147,7 @@
             this.Controls.Add(this.numPortaHost);
             this.Controls.Add(this.txtServidorIP);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Chat";
             ((System.ComponentModel.ISupportInitialize)(this.numPortaHost)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
